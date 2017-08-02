@@ -3,8 +3,11 @@
     <h1>Cinepolis</h1>
   </div>
   <div role="main" class="ui-content">
+    <div style="display:flex;align-items:center;justify-content:center;flex:1;">
+          <img src="/images/cinepolis.png" alt="Imagen de Cinepolis">
+    </div>
 
-    <img src="/images/cinepolis.png" alt="Imagen de Cinepolis">
+
   </div>
   <div data-role="footer" data-position="fixed">
 
@@ -15,11 +18,11 @@
         </li>
 
         <li>
-          <a href="#itemForm">Reservas</a>
+          <a href="#itemCreate">Reservas</a>
         </li>
 
         <li>
-          <a href="#itemCreate">Listado de Reservas</a>
+          <a href="#itemLista">Listado de Reservas</a>
         </li>
 
       </ul>
@@ -29,15 +32,47 @@
 </div>
 
 
-<div data-role"page" id="itemForm">
+<div data-role"page" id="itemCreate">
   <div data-role="header" data-position="fixed">
     <h1>Cinepolis</h1>
   </div>
   <div role="main" class="ui-content">
-    <h2>Reserva tus formularios desde aquí</h2>
-    <form id="itemForm-form">
-      <label for="itemForm-txtNombre">Nombre</label>
-      <input type="text" id ="itemForm-txtNombre" placeholder="Nombre Completo" name="txtNombre">
+
+    <div style="display:flex;align-items:center;justify-content:center;flex:1;">
+          <h2>Reserva tus formularios desde aquí</h2>
+    </div>
+
+    <form id="itemCreate-form">
+      <label for="itemCreate-txtNombrePelicula">Pelicula</label>
+      <input type="text" id ="itemCreate-txtNombrePelicula" placeholder="Nombre de Pelicula" name="txtNombrePelicula">
+
+      <label for="itemCreate-txtSala">Sala</label>
+      <input type="text" id ="itemCreate-txtNombre" placeholder="Sala" name="txtSala">
+
+      <label for="itemCreate-txtFuncion">Fecha de la Funcion</label>
+      <input type="text" id ="itemCreate-dateFuncion" placeholder="Fecha de la funcion" name="txtFuncion">
+
+      <label for="itemCreate-txtHora">Hora de la Funcion</label>
+      <input type="text" id ="itemCreate-txtHora" placeholder="Hora de la funcion" name="txtHora">
+
+      <label for="itemCreate-txtFormato">Formato de la Pelicula</label>
+      <input type="text" id ="itemCreate-txtFormato" placeholder="Formato de la pelicula" name="txtFormato">
+
+      <label for="itemCreate-txtClasificacion">Clasificacion</label>
+      <input type="text" id ="itemCreate-txtClasificacion" placeholder="Clasificacion" name="txtClasificacion">
+
+      <label>Datos del Cliente</label>
+
+      <label for="itemCreate-txtNombre">Nombre Completo</label>
+      <input type="text" id ="itemCreate-txtNombre" placeholder="Nombre Completo" name="txtNombre">
+
+      <label for="itemCreate-txtCorreo">Correo Electronico</label>
+      <input type="text" id ="itemCreate-txtCorreo" placeholder="Correo Electronico" name="txtCorreo">
+
+      <label for="itemCreate-txtAsientos">Cantidad de Asientos</label>
+      <input type="range" id ="itemCreate-txtAsientos"  min="0" max="10" name="intRange">
+
+      <button id="itemCreate-enviar" >Reservar</button>
 
     </form>
 
@@ -51,22 +86,27 @@
         </li>
 
         <li>
-          <a href="#itemForm">Reservas</a>
+          <a href="#itemCreate">Reservas</a>
         </li>
         <li>
-          <a href="#itemCreate">Listado de Reservas</a>
+          <a href="#itemLista">Listado de Reservas</a>
         </li>
       </ul>
     </div>
   </div>
 </div>
 
-<div data-role"page" id="itemCreate">
+<div data-role"page" id="itemLista">
   <div data-role="header" data-position="fixed">
     <h1>Cinepolis</h1>
   </div>
   <div role="main" class="ui-content">
-    <h2>Listado de Reservas de Tickets de Cine</h2>
+    <div style="display:flex;align-items:center;justify-content:center;flex:1;">
+
+
+
+    <h2 style="align:center">Listado de Reservas de Tickets de Cine</h2>
+    </div>
       <ul id ="splash_list" data-role="listview" data-inset="true"></ul>
 
 
@@ -79,10 +119,10 @@
         </li>
 
         <li>
-          <a href="#itemForm">Reservas</a>
+          <a href="#itemCreate">Reservas</a>
         </li>
         <li>
-          <a href="#itemCreate">Listado de Reservas</a>
+          <a href="#itemLista">Listado de Reservas</a>
         </li>
       </ul>
     </div>
